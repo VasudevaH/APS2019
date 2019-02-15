@@ -1,0 +1,17 @@
+Binomial Coefficients
+
+1)Binomial coefficients has some overlapping subproblems,so storing the results would save            computation when same subproblem reappears.
+
+2)Dynamic programming would require a 2d array of shape n*k.
+   total space required=n*k*sizeof(int)
+
+3)If we go with a recursive solution instead of dynamic programming solution then we would    be computing a same subproblem .Therefore execution time is higher.Although there is no explicit data structure is present to store the values,but recursion implicitly maints a stack to store the values before the next function call.As there are two recursive function call in each function.The space required would be 2^n .where n is number of function calls.
+
+Therefore from the above discussion it is clear that even recursive solution requires space and it also its time complexity is greater than recursion,we can conclude dynamic solution is better than recursion.
+
+4)When The goal is only calculate the coefficients of nth stage then,Dp does not require a 2D array instead a 1D array is fine.
+
+-->Time complexity of DP(O(n^2)<<2^n).
+
+
+
